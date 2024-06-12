@@ -1,0 +1,434 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #1a1a2e;
+  color: white;
+  width: 100%;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: #1a1a2e;
+}
+
+.logo img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.maincabeca {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: #0d0d1a;
+  flex-direction: column;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.marca img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.marca span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f00;
+}
+
+nav {
+  background-color: #0d0d1a;
+  padding: 0.5rem 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f00;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.social a {
+  color: white;
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social a:hover {
+  color: #f00;
+}
+
+main {
+  padding: 1rem;
+}
+
+.imagem-full-width {
+  width: 100%;
+  height: 600px;
+}
+
+#conteudo {
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+#conteudo h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.noticiascarrosselcontainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.noticiascarrossel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.gruponoticias {
+  display: none;
+  width: 100%;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+
+.gruponoticias.ativo {
+  display: flex;
+}
+
+.itemnoticia {
+  flex: 0 0 30%;
+  margin: 0 1rem;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.itemnoticia:hover {
+  transform: scale(1.05);
+}
+
+.itemnoticia img {
+  width: 100%;
+  height: auto;
+}
+
+.textonoticia {
+  padding: 1rem;
+}
+
+.textonoticia h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.textonoticia p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.controlescarrossel {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.controlescarrossel a {
+  text-decoration: none;
+  color: #1a1a2e;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.controlescarrossel a:hover {
+  color: #f00;
+}
+
+.anterior, .proximo {
+  text-decoration: none;
+  color: #1a1a2e;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.anterior:hover, .proximo:hover {
+  color: #f00;
+}
+
+.anterior {
+  left: -20px;
+}
+
+.proximo {
+  right: -20px;
+}
+
+#melhorestimes {
+  padding: 2rem 1rem;
+  background-color: #0d0d1a;
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+#melhorestimes h2 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+
+#melhorestimes h2::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 4px;
+  background-color: #f00;
+  margin: 0.5rem auto 0;
+}
+
+.timescontainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.itemtime {
+  flex: 0 0 22%;
+  margin: 0.5rem;
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.itemtime:hover {
+  transform: scale(1.05);
+}
+
+.itemtime img {
+  width: 100%;
+  height: auto;
+}
+
+.textotime {
+  padding: 1rem;
+}
+
+.textotime h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #1a1a2e;
+}
+.carrossel {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.itemcarrossel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.itemcarrossel.ativo {
+  opacity: 1;
+}
+
+.carrossel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#agentes {
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+#agentes h2 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+
+#agentes h2::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 4px;
+  background-color: #f00;
+  margin: 0.5rem auto 0;
+}
+
+.agentescontainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.itemagente {
+  flex: 0 0 22%;
+  margin: 0.5rem;
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.itemagente:hover {
+  transform: scale(1.05);
+}
+
+.itemagente img {
+  width: 100%;
+  height: auto;
+}
+
+.textoagente {
+  padding: 1rem;
+}
+
+.textoagente h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #1a1a2e;
+}
+
+footer {
+  background-color: #1a1a2e; 
+  text-align: center;
+  padding: 2rem 1rem;
+  color: white;
+}
+
+.conteudorodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.botaocadastrar {
+  background-color: #f00;
+  color: black;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botaocadastrar:hover {
+  background-color: darkred;
+}
+
+.textocadastrar {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: white;
+}
+.card{
+  border-radius:8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  max-width: 300px;
+  text-align: center;
+  overflow: hidden;
+}
+.card-img{
+  width: 100%;
+  height: auto;
+}
+.card-content{
+  padding: 20px;
+}
+.card-button{
+  background: darkred;
+  color:#000;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius:0 0 8px 8px;
+  transition:background 0.3s;
+}
+
+.more-info {
+    display: none;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.card-content.expanded .more-info {
+    display: block;
+}

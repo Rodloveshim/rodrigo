@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <main class="cadastroprincipal">
+        <div class="formulariocontainer">
+            <h2>Cadastro</h2>
+            <form id="formularioCadastro" action="#" method="post">
+                <div class="grupoinput">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="grupoinput">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" required>
+                </div>
+                <div class="grupoinput">
+                    <label for="sexo">Sexo:</label>
+                    <select id="sexo" name="sexo" required>
+                        <option value="">Selecione</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+                <div class="grupoinput">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="grupoinput">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+                <button type="submit" class="botaoenviar">Cadastrar</button>
+            </form>
+            <button class="botaovoltar" onclick="window.location.href='index.html'">Voltar</button>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
